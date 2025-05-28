@@ -60,10 +60,9 @@ def menu():
             updater()
         elif num == choices[3]:
             show_all_stored_data()
-        elif num == choices[4]:
-            return False
         else:
             console.print("Please select an [red]availible[/red] Option!")
+            return False
 
 if __name__ == "__main__":
     menu()
