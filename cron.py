@@ -1,3 +1,3 @@
-from helpers.data_manement import updater
+from helpers.data_mangement import updater
 
 updater()
