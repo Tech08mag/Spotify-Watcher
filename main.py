@@ -27,7 +27,7 @@ def new_entry():
 
 
 choices = [
-    "1 downlaod a single Song",
+    "1 Downlaod a single Song",
     "2 Add a new Album/Playlist to the Watchlist",
     "3 Manuelly update your Album/Playlists",
     "4 Display all stored data",
