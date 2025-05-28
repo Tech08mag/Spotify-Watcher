@@ -1,6 +1,8 @@
+import os
 import csv
 from contextlib import chdir
-import os
+
+
 from rich.console import Console
 
 console = Console()

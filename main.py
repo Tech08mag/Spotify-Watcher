@@ -1,9 +1,10 @@
-from helpers.installer import install_software
 import logging
+import questionary
 from rich.logging import RichHandler
 from rich.console import Console
+
+
 from helpers.data_mangement import write_data, download, updater, show_all_stored_data
-import questionary
 
 
 debug = True
