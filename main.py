@@ -43,7 +43,7 @@ choices=["1 downlaod a single Song",
 def menu():
     while True:
         num = (
-        questionary.rawselect(
+        questionary.select(
             "What do you want to do?",
             choices=choices,
         ).ask()
