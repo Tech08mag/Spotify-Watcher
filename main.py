@@ -1,3 +1,5 @@
+from helpers.installer import install_software
+
 def update_packages():
     for package in packages:
         install_software(package)
@@ -7,7 +9,6 @@ try:
     from rich.logging import RichHandler
     from rich.console import Console
     from helpers.data_manement import write_data, download, updater, show_all_stored_data
-    from helpers.installer import install_software
     import questionary
 except:
     packages = ["spotdl", "rich", "questionary"]
