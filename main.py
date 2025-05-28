@@ -1,18 +1,10 @@
-import logging
 import questionary
-from rich.logging import RichHandler
 from rich.console import Console
 
 from helpers.data_mangement import write_data, download, updater, show_all_stored_data
 
 
-debug = True
-FORMAT = "%(message)s"
-logging.basicConfig(level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()])
-
-
 console = Console()
-log = logging.getLogger("rich")
 
 
 def new_entry():
