@@ -1,18 +1,10 @@
 from helpers.installer import install_software
+import logging
+from rich.logging import RichHandler
+from rich.console import Console
+from helpers.data_mangement import write_data, download, updater, show_all_stored_data
+import questionary
 
-def update_packages():
-    for package in packages:
-        install_software(package)
-
-try:
-    import logging
-    from rich.logging import RichHandler
-    from rich.console import Console
-    from helpers.data_mangement import write_data, download, updater, show_all_stored_data
-    import questionary
-except:
-    packages = ["spotdl", "rich", "questionary"]
-    update_packages()
 
 debug = True
 FORMAT = "%(message)s"
@@ -39,7 +31,6 @@ choices=["1 downlaod a single Song",
         "2 Add a new Album/Playlist to the Watchlist", 
         "3 Manuelly update your Album/Playlists",
         "4 Display all stored data",
-        "5 exit"
         ]
 
 def menu():
