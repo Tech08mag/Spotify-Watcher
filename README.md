@@ -28,6 +28,7 @@
 - toml file
 - relative path support
 - add alternative download ressource
+- add youtube playlist support
 
 ## Notes
 Please keep in mind that downloading new songs may be a CPU intense task caused by file formatting
