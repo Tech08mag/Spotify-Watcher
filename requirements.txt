@@ -1,3 +1,4 @@
 spotdl
 rich
 questionary
+votify

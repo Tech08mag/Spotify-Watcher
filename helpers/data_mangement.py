@@ -16,7 +16,7 @@ def show_all_stored_data():
         csv_file.close()
 
 
-def updater():
+def update():
     with open('links.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:

@@ -12,9 +12,10 @@
 3. Run the main.py
 4. Follow the provided instructions and configure some songs before downloading them
 
-## common mistakes
-1. The Program has no access to the path
-2. Make sure your Playlist is public!
+## troubleshooting
+- The Program has no access to the path
+- Make sure your Playlist is public!
+- if you get errors like AudioProviderError: YT-DLP download error try disabling vpn
 
 ## features
 - [x] Downlaod single Files/Album or Playlists from Spotify
@@ -29,9 +30,12 @@
 - relative path support
 - add alternative download ressource
 - add youtube playlist support
+- store the songs which can't be found
 
 ## Notes
-Please keep in mind that downloading new songs may be a CPU intense task caused by file formatting
+- Please keep in mind that downloading new songs may be a CPU intense task caused by file formatting
+
+
 
 
 [Python]: https://img.shields.io/badge/Language-Python-green
