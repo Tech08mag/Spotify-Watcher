@@ -8,7 +8,7 @@ try:
     import logging
     from rich.logging import RichHandler
     from rich.console import Console
-    from helpers.data_manement import write_data, download, updater, show_all_stored_data
+    from helpers.data_mangement import write_data, download, updater, show_all_stored_data
     import questionary
 except:
     packages = ["spotdl", "rich", "questionary"]
@@ -29,7 +29,7 @@ def new_entry():
     link = console.input("Add [blue]Link[/blue] to your Spotify Watcher: ")
     if link.startswith("https://open.spotify.com/"):
         name = console.input("Please enter the [green]Name[/green] for your Playlist/Album: ")
-        location = path = questionary.path("Please enter the Location where you want to store your files: ").ask()
+        location =  questionary.path("Please enter the Location where you want to store your files: ").ask()
         write_data(name, link, location)
     else:
         console.print("Your [red]Link[/red] have to be from Spotify!")
@@ -38,7 +38,9 @@ def new_entry():
 choices=["1 downlaod a single Song", 
         "2 Add a new Album/Playlist to the Watchlist", 
         "3 Manuelly update your Album/Playlists",
-        "4 Display all stored data"]
+        "4 Display all stored data",
+        "5 exit"
+        ]
 
 def menu():
     while True:
@@ -58,6 +60,8 @@ def menu():
             updater()
         elif num == choices[3]:
             show_all_stored_data()
+        elif num == choices[4]:
+            return False
         else:
             console.print("Please select an [red]availible[/red] Option!")
 
