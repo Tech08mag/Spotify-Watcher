@@ -10,7 +10,7 @@
 2. Install all requirements with 
 `pip install -r requirements.txt`
 3. Run the main.py
-4. Follow the provided instructions and configure some songs beofre downloading them
+4. Follow the provided instructions and configure some songs before downloading them
 
 ## common mistakes
 1. The Program has no access to the path
@@ -22,6 +22,12 @@
 - [x] Manually update the added Album/Playlists
 - [x] Display all stored data
 - [x] Periodic updating the Album/Playlists (Add a Cronjob which executes the cron.py periodic to keep your Playlists up to date)
+
+## To Do
+- edit stored values
+- toml file
+- relative path support
+- add alternative download ressource
 
 ## Notes
 Please keep in mind that downloading new songs may be a CPU intense task caused by file formatting
