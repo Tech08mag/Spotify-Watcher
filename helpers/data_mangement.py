@@ -21,7 +21,7 @@ def updater():
             try:
                 with chdir(row[2]):
                     download(row[1])
-            except:
+            except Exception:
                 os.mkdir(row[2])
                 with chdir(row[2]):
                     download(row[1])
